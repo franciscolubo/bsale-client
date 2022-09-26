@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3001/' // - URL default que utilizo
+const URL = 'https://bsale-api-fl.herokuapp.com/' // - URL de heroku. ¡PARA CORRER EN LOCAL CAMBIAR POR! 'http://localhost:3001/'
 
 const $ = value => document.querySelector(value)  // - Cree una funcion para facilitar la seleccion de las etiquetas HTML
 
