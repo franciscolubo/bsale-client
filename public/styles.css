@@ -1,0 +1,14 @@
+@media screen and (max-width: 400px) {
+    section div div div div div h5 {
+        font-size: 0.95rem;
+    }
+
+    section div div div div div div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    section div div div div div div p {
+        font-size: 0.80rem;
+    }
+}

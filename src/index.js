@@ -89,9 +89,9 @@ const deployData = (data) => {
                             <image src='${product.url_image}' class="card-img-top h-50" alt='image product'/>
                             <div class="p-3 h-50 d-flex flex-column justify-content-between">
                                 <h5 class="fw-bold">${product.name.toUpperCase()}</h5>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-sm-between align-items-center">
                                     ${product.discount > 0
-                ? `<div class="d-flex">
+                ? `<div class="d-sm-flex flex-sm-column flex-md-row">
                 <p class="text-muted text-decoration-line-through">$${product.price}</p>
                 <p style="margin-left: 4px;"> > $${product.price - (product.price * product.discount) / 100}</p>
                 </div>`
