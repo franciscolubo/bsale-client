@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3001/' // - URL de heroku. ¡PARA CORRER EN LOCAL CAMBIAR POR! 'http://localhost:3001/'
+const URL = 'https://bsale-api-fl.herokuapp.com/' // - URL de heroku. ¡PARA CORRER EN LOCAL CAMBIAR POR! 'http://localhost:3001/'
 
 // Funciones en las cuales realizo las peticiones a mi API
 let typeProducts = ''

@@ -10,11 +10,12 @@ const deployData = (data) => {
     } else {
         productsHtml = '' // Limpio la vieja cadena de texto para luego agregar la nueva
         data.data.forEach(product => {
-            if (!product.url_image) product.url_image = '../public/notfound.jpg' // Verifico que la imagen tenga algun contenido, ya que llegaba como 'Null' o un string vacio
+            console.log(product.urlImage)
+            if (!product.urlImage) product.urlImage = '../public/notfound.jpg'; // Verifico que la imagen tenga algun contenido, ya que llegaba como 'Null' o un string vacio
             productsHtml += `
                     <div class="col mb-5">
                         <div class="card h-100 justify-content-between">
-                            <image src='${product.url_image}' class="card-img-top h-50" alt='image product'/>
+                            <image src='${product.urlImage}' class="card-img-top h-50" alt='image product'/>
                             <div class="p-3 h-50 d-flex flex-column justify-content-between">
                                 <h5 class="fw-bold">${product.title.toUpperCase()}</h5>
                                 <div class="d-flex justify-content-sm-between align-items-center">
@@ -43,8 +44,9 @@ const deployData = (data) => {
 }
 
 const deployPaginate = (totalRows, actuallyPage) => {
-    const allPages = Math.ceil(totalRows / 20)
-
+    console.log(totalRows)
+    const allPages = Math.ceil(totalRows / 10)
+    console.log(allPages)
     let pageHtml = `<li class="page-item"><buttton class="page-link ${actuallyPage === 1 && 'd-none'}" onClick="selectPage(${(actuallyPage - 1)})"><</button></li>`
 
     for (let i = 1; i <= allPages; i++) {

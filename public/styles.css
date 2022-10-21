@@ -12,3 +12,7 @@
         font-size: 0.80rem;
     }
 }
+
+#paginate li .page-link {
+    cursor: pointer;
+}
